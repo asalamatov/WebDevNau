@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  width: 600px;
+  width: 800px;
   margin: auto;
   margin-top: 0;
   margin-bottom: 0;
@@ -47,6 +47,27 @@ body {
   padding: 0;
   background-color: #fffded;
 }
+
+main {
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px;
+}
+
+section {
+  width: 525px;
+  float: right;
+  padding-bottom: 20px;
+}
+
+aside {
+  width: 215px;
+  float: right;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
 
 .shadow {
   color: white;
@@ -61,7 +82,7 @@ body {
 
 .speaker {
   text-align: center;
-  border-bottom: 1px solid #931420;
+  /* border-bottom: 1px solid #931420; */
 }
 
 
@@ -90,13 +111,7 @@ header h2 {
   font-size: 170%;
 }
 
-main {
-  padding: 10%;
-  background-color: #fff;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin: 20px;
-}
+
 
 h1,
 h2,
@@ -106,11 +121,10 @@ h3 {
 
 h1 {
   font-size: 150%;
-  border-top: solid 3px #931420;
-  border-bottom: solid 3px #931420;
-  padding: .3em 5px;
+  padding-top: .5rem;
+  padding-bottom: 0.25rem;
+  margin: 0;
 }
-
 
 h2 {
   color: #800000;
@@ -119,10 +133,42 @@ h2 {
   padding: .5em auto 1em;
 }
 
+article{
+  padding-top: 0.5rem;
+  padding-bottom: .5rem;
+  border-bottom: #800000 2px solid;
+  border-top: #800000 2px solid;
+  img{
+    float: right;
+    margin: 2rem 0 2rem 2rem;
+    border: #800000 solid 2px;
+  };
+  h2{
+    padding-top: 0;
+  };
+  h3{
+    font-size: 105%;
+    padding-bottom: .25rem;
+  }
+}
+
+
+
+
 h3 {
   font-size: 105%;
   padding-bottom: .25em;
   text-indent: 0;
+}
+
+aside h3 {
+  font-size: 105%;
+  padding-bottom: .25em;
+  text-indent: 0;
+}
+
+aside img{
+  padding-bottom: 1rem;
 }
 
 p {
@@ -138,18 +184,14 @@ blockquote {
 }
 
 ul {
-  list-style: none;
+  /* list-style: none; */
   padding-bottom: .25em;
   padding-left: 1.25em;
 }
 
 ul li {
-  margin-bottom: 5px;
-  padding-bottom: .35em;
-}
-
-ul:first {
-  margin-top: 1em;
+  margin-top: 0.7rem;
+  /* padding-bottom: .35em; */
 }
 
 a {
@@ -170,4 +212,5 @@ footer {
   text-align: center;
   padding: 1em 0;
   margin-top: 20px;
+  clear:both;
 }
