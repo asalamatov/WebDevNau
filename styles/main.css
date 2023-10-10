@@ -53,6 +53,8 @@ main {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin: 20px;
+  margin-top: +5rem;
+  clear: left;
 }
 
 section {
@@ -81,7 +83,7 @@ aside {
 }
 
 .speaker {
-  text-align: center;
+  text-align: left;
   /* border-bottom: 1px solid #931420; */
 }
 
@@ -213,4 +215,76 @@ footer {
   padding: 1em 0;
   margin-top: 20px;
   clear:both;
+}
+
+.nav_menu {
+  position: relative;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul li {
+  float: left;
+}
+
+ul>li>a {
+  display: block;
+  width: 10rem;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: #800000;
+  color: white;
+  font-weight: bold;
+}
+
+
+#nav_menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#nav_menu ul li {
+  float: left;
+}
+
+#nav_menu ul li a {
+  display: block;
+  width: 10rem;
+  text-align: center;
+  padding: 1em 0;
+  text-decoration: none;
+  background-color: #800000;
+  color: white;
+  font-weight: bold;
+}
+
+#nav_menu a.current {
+  color: yellow;
+}
+
+#nav_menu ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+
+#nav_menu ul ul li {
+  float: none;
+}
+
+#nav_menu ul li:hover>ul {
+  display: block;
+}
+
+#nav_menu>ul::after {
+  content: "";
+  clear: both;
+  display: block;
 }
