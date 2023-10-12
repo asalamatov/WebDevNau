@@ -140,11 +140,7 @@ article{
   padding-bottom: .5rem;
   border-bottom: #800000 2px solid;
   border-top: #800000 2px solid;
-  img{
-    float: right;
-    margin: 2rem 0 2rem 2rem;
-    border: #800000 solid 2px;
-  };
+
   h2{
     padding-top: 0;
   };
@@ -154,7 +150,11 @@ article{
   }
 }
 
-
+article   img {
+    float: right;
+    margin: 2rem 0 2rem 2rem;
+    border: #800000 solid 2px;
+}
 
 
 h3 {
@@ -221,17 +221,17 @@ footer {
   position: relative;
 } */
 
-ul {
+/* ul {
   margin: 0;
   padding: 0;
   list-style: none;
-}
+} */
 
-ul li {
+/* ul li {
   float: left;
-}
+} */
 
-ul>li>a {
+/* ul>li>a {
   display: block;
   width: 10rem;
   text-align: center;
@@ -240,6 +240,10 @@ ul>li>a {
   background-color: #800000;
   color: white;
   font-weight: bold;
+} */
+
+ul {
+  list-style-type: circle;
 }
 
 
