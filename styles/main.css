@@ -37,7 +37,8 @@ html {
 }
 
 body {
-  width: 800px;
+  width: 99%;
+  max-width: 960px;
   margin: auto;
   margin-top: 0;
   margin-bottom: 0;
@@ -58,15 +59,16 @@ main {
 }
 
 section {
-  width: 525px;
+  width: 65%;
   float: right;
   padding-bottom: 20px;
 }
 
 aside {
-  width: 215px;
+  /* width: 25%; */
   float: right;
   padding-left: 20px;
+  padding-right: 40px;
   padding-bottom: 20px;
 }
 
@@ -151,10 +153,13 @@ article{
 }
 
 article   img {
+  max-width: 40%;
+  min-width: 150px;
     float: right;
     margin: 2rem 0 2rem 2rem;
     border: #800000 solid 2px;
 }
+
 
 
 h3 {
@@ -196,14 +201,14 @@ ul li {
   /* padding-bottom: .35em; */
 }
 
-a {
+a, li a {
   color: #1877f2;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #42b72a;
+  color: #931420;
   text-decoration: underline;
   font-style: italic;
 }
@@ -260,7 +265,7 @@ ul {
 
 #nav_menu ul li a {
   display: block;
-  width: 10rem;
+  width: 9rem;
   text-align: center;
   padding: 1em 0;
   text-decoration: none;
@@ -292,4 +297,69 @@ ul {
   content: "";
   clear: both;
   display: block;
+}
+
+aside h2 {
+  padding-bottom: 1rem;
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+@media screen and (max-width: 959px) {
+  h1 {
+    font-size: 135%;
+  }
+
+  aside h2,
+  section h2 {
+    font-size: 120%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header img {
+    float: none;
+    text-align: center;
+  }
+
+  section, aside {
+    float:none;
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100% - 10%;
+  }
+  aside * {
+    text-align: center;
+  }
+
+  article img {
+    width: 30%;
+  }
+
+  .speaker-columns {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    width: 90%;
+  }
+
+  #nav_menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+    background-color: #800000 !important;
+  }
+}
+
+@media screen and (max-width: 479px){
+  * {
+    font-size: 99%;
+  }
+  img {
+    max-width: 90%;
+  }
 }
