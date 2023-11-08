@@ -137,31 +137,16 @@ h2 {
 article {
   padding-top: 0.5rem;
   padding-bottom: .5rem;
-  /* border-bottom: #800000 2px solid;
-  border-top: #800000 2px solid; */
-
-  img {
-    float: right;
-    margin: 2rem 0 2rem 2rem;
-    border: #800000 solid 2px;
-  }
-
-  ;
-
-  h2 {
-    padding-top: 0;
-  }
-
-  ;
-
-  h3 {
-    font-size: 105%;
-    padding-bottom: .25rem;
-  }
 }
 
+article h2 {
+    padding-top: 0;
+}
 
-
+article h3 {
+    font-size: 105%;
+    padding-bottom: .25rem;
+}
 
 h3 {
   font-size: 105%;
@@ -284,4 +269,20 @@ footer {
   content: "";
   clear: both;
   display: block;
+}
+
+figure {
+    float: right;
+    padding-left: 1em;
+}
+
+figure img {
+    margin: .5em 0 .5em;
+    border: 1px solid black;
+}
+
+figcaption {
+    font-weight: bold;
+    padding-top: 0.25em;
+    border-bottom: 1px solid black;
 }
